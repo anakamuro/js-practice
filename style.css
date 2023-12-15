@@ -1,3 +1,152 @@
 td {
     border: 1px solid black;
 }
+.btn{
+    color: white;
+    background-color: red;
+    height: 50px;
+    width: 100px;
+   border-radius: 15px;
+   font-size: 1.2em;
+}
+/* .box {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    border: 1px solid black;
+    display: inline-block;
+} */
+#getEle {
+    background-color: red;
+}
+.highlight {
+    background-color: yellow;
+}
+#pickme .output {
+    background-color: aqua;
+}
+input[name="last"]{
+    background-color: red;
+}
+div .output {
+    background-color: red;
+}
+#overlay {
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 400px;
+    background-color: #ddd;
+    border: 1px solid black;
+    z-index: 1000;
+}
+
+.box1 {
+    background-color: aqua;
+    font-size: 1.5em;
+    color: #fff;
+}
+.box2 {
+    background-color: red;
+    font-size: 0.5em;
+    color: #ddd;
+}
+#one, #two, #three{
+   width: 100px;
+   height: 100px;
+   display: inline-block;
+   border: 1px solid black;;
+}
+.active {
+    background-color: yellow;
+}
+.con {
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 0.8em;
+    display: none;
+}
+.acc {
+    font-size: 1.5em;
+    background-color: #ddd;
+}
+.active {
+    display: block;
+}
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+td:first-child {
+    width: 300px;
+}
+.holder {
+    display: inline-block;
+    width: 300px;
+    height:300px;
+    border: 1px solid black;
+    padding: 10px;
+}
+.active {
+    background-color: red;
+}
+#output {
+    width: 400px;
+    height: 400px;
+    display: block;
+    border: 1px solid black;
+}
+#cButton > div {
+    width: 100px;
+    display: inline-block;
+    height: 50px;
+    text-align: center;
+    border: 1px solid black;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    display: block;
+    border: 1px solid black;
+    display: inline-block;
+}
+.gameboard {
+    width: 600px;
+    height: 500px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+}
+.office {
+    float: left;
+    width: 120px;
+    height: 170px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ddd;
+    margin: 10px 30px;
+}
+.desk {
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    position: absolute;
+    background-color: burlywood;
+    z-index: 2;
+}
+.computer {
+    background: url('images/comp.jpg') bottom center no-repeat;
+    position: absolute;
+    background-size: 100% 100%;
+    top: 100%;
+    width: 100%;
+    height: 80%;
+    transition: all 0.5s;
+}
+.popup {
+    top: 0;
+}
