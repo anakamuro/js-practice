@@ -1126,49 +1126,1130 @@
 //         console.dir(e);
 //     }
 // }
-window.onload = build;
-let computer;
-let offices = 6;;
-let timer;
-let sCom;
-let score = 0;
-let cOff = true;
+// window.onload = build;
+// let computer;
+// let offices = 6;;
+// let timer;
+// let sCom;
+// let score = 0;
+// let cOff = true;
+
+// function build(){
+//     let html = "<h1>Hit the computer</h1>";
+//     for(let x = 0; x < offices; x++){
+//         html+='<div class="office"><div class="desk"></div><div class="computer"></div></div>';
+//     }
+// document.querySelector(".gameboard").innerHTML = html;
+// computer = document.querySelectorAll('.computer');
+// for(let x=0; x<computer.length; x++){
+//     computer[x].addEventListener('click', hitcomputer, false)
+// }
+// }
+
+// function popup(){
+//     cOff= true;
+//     sCom = computer[Math.floor(Math.random()*computer.length)];
+//     console.log(sCom)
+//     sCom.classList.add('popup');
+//     let rTime = (Math.floor(Math.random()*10)*100)+500;
+//     timer = setTimeout(hidecomputer, rTime);
+// }
+// function hidecomputer(){
+//     sCom.classList.remove('popup');
+//     popup();
+// }
+
+// function hitcomputer(){
+//     event.target.classList.remove('popup');
+//     if(cOff){
+//         cOff = false;
+//         score++;
+//         document.querySelector('.score').innerHTML = score;
+//     }
+//     popup();
+// }
+
+// function start(){
+//     popup()
+// }
+
+// let output = document.getElementById('output');
+// let str = "sdaJavascriptvewlrewbcbricJavaScriptBEWPICUJjavascriptBCPJ25";
+
+// function cEmail(e){
+//     let p = /([a-zA-Z0-9.+-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]+)/ig;
+//     let r = e.match(p);
+//      return r == null ? false: true;
+// }
+// function cNum(e){
+//     let p = /\D/;
+//     let r = e.match(p);
+//      return r == null ? false: true;
+
+// }
+// function cChar(){
+//     let p = /[a-zA-Z]/ig;
+//     let r = e.match(p);
+//      return r == null ? true: false;
+// }
+
+// function myFun(){
+//     let i = document.getElementsByTagName('input');
+//   for(let x = 0; x < i.length;x++){
+//     // console.log(i[x]);
+//     if(i[x].id == ""){
+//      console.log("No Value in  "+i[x].id);
+//     }
+//     if(i[x].type == "text"){
+//         if(i[x].id == "email"){
+//             if(cEmail(i[x].value)){
+//             console.log('email valid')
+//             } else {
+//                 console.log('Bad email')
+//             }
+//         } 
+//         if(i[x].id == "num"){
+//             if(cEmail(i[x].value)){
+//             console.log('num only valid')
+//             } else {
+//                 console.log('non num is the string')
+//             }
+
+//         } 
+//         if(i[x].id == "cha"){
+//             if(cEmail(i[x].value)){
+//             console.log('char only valid')
+//             } else {
+//                 console.log('non char is the string')
+//             }
+
+//         } 
+//     }
+//   }
+// }
+
+
+// function myEmail(e){
+//     let p = /([a-zA-Z0-9.+-]+_@[a-zA-Z0-9._-]+\.[a-zA-Z]+)/ig;
+//     let r = e.match(p);
+//      return r == null ? false: true;
+// }
+
+// 
+
+// function lookUp(){
+//     let s = document.getElementById('output').innerText;
+//     let st = document.getElementById('sText').value;
+//     let rt = document.getElementById('rText').value;
+//     let re = new RegExp(st,"gi");
+    
+//     let result = s.match(re);
+//     if(result){
+//         let rr = s.replace(re, rt);
+//         document.getElementById('output').innerText = rr;
+//     }
+//     console.log(result);
+// }
+
+// function lookUp(){
+//    let rawTxt = document.myForm.txtarea.value;
+//    let eData = rawTxt.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
+//    console.log(eData)
+//    let html = "";
+//    let holder = [];
+// //    document.myForm.txtarea2.value = eData.toString();
+// for(let x =0; x < eData.length; x++){
+//     if(holder.indexOf(eData[x]) == -1){
+//         holder.push(eData[x])
+//     }
+// }
+// document.myForm.txtarea2.value = holder.join("|");
+// }
+
+// function lookUp(){
+//    let rawTxt = document.myForm.txtarea.value;
+//    let p = new RegExp("Java");
+//    let result1 = p.test(rawTxt);
+//    let result2 = p.exec(rawTxt);
+//    console.log(result1);
+//    console.log(result2);
+// }
+
+// function cCookie(name, value, days){
+//     let e = "";
+//     if(days){
+//         let d = new Date();
+//         d.setTime(d.getTime() +(days*24*60*60*1000));
+//         e= "; expires="+d.toUTCString();
+//     }
+//     document.cookie = name + "=" + value + e +";path=/";
+// }
+
+// function rCookie(name){
+//     let p = name + "=";
+//     let c = document.cookie.split(';');
+
+//     for(let x=0; x < c.length; x++){
+//     // let t = c[x].charAt[0] == ' ' ? c[x].substring(1) : c[x];
+//     let t = c[x].trim();
+//     // let t = c[x].replace(/^\s+|\s+$/gm,");
+//     if(t.indexOf(p) == 0){
+//         return t.substring(p.length, t.length);
+//     }
+//     }
+//     return "";
+// }
+
+// function dCookie(name){
+//     cCookie(name, "", -1);
+// }
+// let myCookie = rCookie('test');
+
+// (function(){
+//     let message = "Hello world";
+//     document.getElementById('output').innerHTML = message;
+// })();
+
+// let myArr = ["Aki", "Bob", "John"];
+
+// function showNames(){
+//     console.log(arguments);
+//     console.log(arguments[0]);
+// }
+
+// showNames(myArr, "JavaScr5cript")
+// cUp();
+// function cUp(){
+//     let test = document.getElementById("test");
+//     cNode(test);
+// }
+
+// function cNode(data){
+//     for(let x=0; x < data.children.length;x++){
+//         let c = data.children[x];
+//         sNode(c);
+//         cNode(c);
+//     }
+// }
+
+// function sNode(data){
+//     let bgColor = "#"+Math.random().toString(16).substr(-6);
+//     console.log(bgColor);
+//     data.style.backgroundColor = bgColor;
+//     data.classList.add('box');
+// }
+
+// let playLockout = false;
+// let gamePlay = false;
+// let tileImages = [], tileArray = [], tfo = [];
+// let cardFlipped = -1;
+// let timer;
+// let sb = document.getElementById('start');
+// let message = document.getElementById('message');
+// let score = document.getElementById('score');
+// let gameboard = document.getElementById('gameboard');
+// // let gameTile = document.querySelectorAll('.gameTile');
+
+
+
+// sb.addEventListener('click', startGame);
+
+// function startGame(){
+//     sb.style.display  = "none";
+//     // gameboard.style.height = "1000px"
+//     // gameTile.style.height = "200px"
+//     message.innerHTML = "its working" + gamePlay;
+//     if(!gamePlay){
+//         gamePlay = true;
+//         buildArray();
+//         tileArray = tileImages.concat(tileImages);
+//         shuffleArray(tileArray);
+//         buildboard();
+//     }
+// }
+
+// function buildboard(){
+//     let html = '';
+//     let x = 0;
+//     tileArray.forEach(function(ele){
+//         x++;
+//         html += '<div class="gameTile>';
+//         html += '<img id="cardz'+'"src="http://via.placeholder.com/250/000000/ffffff?text=click" onclick="pickCard(' + (x-1) +',this)" class="flipImage"></div>';
+//     })
+//    gameboard.innerHTML = html;
+// }
+
+// function pickCard(i, t){
+//     console.log(event.target);
+//     if(!playLockout && !isinArray(t.id, tfo)){
+//     if(cardFlipped >=0){
+//         cardFlip(i, t);
+//         playLockout = true;
+//     if(checkSrc(tfo[tfo.length-1]) == checkSrc(tfo[tfo.length-2])){
+//       message.innerHTML = "Match Found";
+//       cardFlipped = -1;
+//       playLockout = false;
+
+//       if(tfo.length == tileArray.length){
+//        gameover();
+//       }
+//     } else {
+//         message.innerHTML = "No Match";
+//         timer = setInterval(hideCard, 1000);
+//     }
+//     } else {
+//        cardFlipped = i;
+//         cardFlip(i, t);
+//     }
+// } else {
+//     message.innerHTML = "Locked out";
+// }
+// }
+
+// function gameover(){
+//     message.innerHTML = "Game Over";
+//     sb.style.display = "block";
+//     gamePlay = false;
+//     tfo = [];
+//     tileImages = [];
+//     gameboard.innerHTML = '';
+
+// function isinArray(v, array){
+//     return array, indexOf(v) > -1;
+// }
+
+// function hideCard(){
+//     for(let x = 0; x< 2;x++){
+//         let vid = tfo.pop();
+//         document.getElementById(vid).src = "http://via.placeholder.com/250/000000/ffffff?text=click";
+//     }
+//  clearInterval(timer);
+//  cardFlipped = -1;
+//  playLockout = false;
+//  message.innerHTML = "Select Again";
+// }
+
+// function checkSrc(a){
+//     return document.getElementById(a).src
+// }
+// function cardFlip(i, t){
+//     t.src= "http://via.placeholder.com/250/000000/ffffff?text=" + tileArray[i];
+//     tfo.push(t.id);
+// }
+// function buildArray(){
+//     for (let x = 0; x < 7; x++) {
+//        tileImages.push(x + '.jpg');
+//     }
+// }
+// function shuffleArray(array){
+//     for ( x = array.length -1; x > 0; x--) {
+//      let holder = Math.floor(Math.random()*(x+1));
+//      let itemValue = array[x];
+//      array[x] = array[holder];
+//      array[holder] = itemValue
+//     }
+//     return array;
+// }
+// }
+
+// let message = document.getElementById('message');
+// if(window.FileReader){
+//     message.innerHTML = "file reade is available"
+// } else {
+//     message.innerHTML = "file reade is NOT available"
+// }
+
+// function upFiles(files){
+//     for(let x = 0; x < files.length; x++){
+//         let fReader = new FileReader();
+//         let fileName = files[x].name;
+//         fReader.onload = function(e){
+//             console.log(e.target.result);
+//             console.log(e.target);
+//             message.innerHTML += '<br>' + files[x].name;
+//             message.innerHTML += '<br>' + e.target.result;
+//         }
+//         fReader.readAsText(files[x]);
+//     }
+// }
+
+//AIzaSyClw67sMoTK970wBSjJAqrQVo-PUZ10Quc
+// window.onload = init;
+// let m = document.getElementById('map');
+
+// function init(){
+//    navigator.geolocation.getCurrentPosition(placeMap)
+// }
+
+// function placeMap(data){
+//     let options = {
+//         center: {
+//             lat: data.coords.latitude, 
+//             lng: data.coords.longitude
+//         }
+//         ,zoom: 5
+//     }
+//     let map = new google.maps.Map(m, options);
+// console.dir(data);
+// }
+
+// let message = "Hello world";
+// let myObj = {
+//     "message": "Hello World", 
+//     "count": 1, 
+//     "secret": "Javascript"
+// }
+// let myStr = JSON.stringify(myObj);
+// localStorage.setItem('mes', myStr);
+// console.log(myStr);
+// let myObj2 = JSON.parse(myStr);
+// console.log(myObj2);
+
+
+// if(localStorage.getItem('mes')){
+// let myObj2 = JSON.parse(localStorage.getItem('mes'));
+//     document.getElementById('output').innerHTML = myObj2.message + '<br>' + myObj2.count + '<br>' + myObj2.secret;
+//     myObj2.count = Number(myObj2.count) + 1;
+//     console.log(myObj2.count)
+//     myObj = {
+//         "message": "Updated", 
+//         "count": myObj2.count, 
+//         "secret": "Javascript 2"
+//     };
+//     myStr = JSON.stringify(myObj);
+// } 
+//     localStorage.setItem('mes', myStr);
+
+
+// if(localStorage.getItem('count')){
+//     let cnt = Number(localStorage.getItem('count')) + 1;
+//     localStorage.setItem('count', cnt);
+//     document.getElementById('output').innerHTML += cnt;
+// } else {
+//     localStorage.setItem('count', 0);
+// }
+
+// html += '<div class="item"><h3>'+v.name+'</h3><img src="http://via.placeholder.com/350X150" class="img-fluid><div>'+v.details+'<a href="#" class="productItem" data-name="'+v.name+'" data-s="'+v.details+'" data-price="'+v.cost+'" data-id="'+x+'">Add to Cart</a></div></div>';
+
+// 
+
+// let canvas = document.getElementById('canvas1');
+// let ctx = canvas[0].getContext('2d');
+// canvas.width = 400;
+// canvas.height = 600;
+// ctx.fillStyle = "red";
+// ctx.fillRect(20, 30, 100, 120)
+// data = [
+//     {
+//     "name": "John",
+//     "guests": 3,
+//     "status": true
+//    },
+//     {
+//     "name": "Mike",
+//     "guests": 5,
+//     "status": false
+//    },
+//     {
+//     "name": "Jrnny",
+//     "guests": 2,
+//     "status": false
+//    }
+// ]
+
+// let party = JSON.parse(data);
+
+// const friend = {firstName : "Larry", lastName: "Aki"}
+// let myArr = [];
+// for(let x = 0; x < 10; x++){
+//     myArr.push(x);
+// }
+// console.log(myArr);
+
+// let a = " Hello World.  "
+// let a = "More Lines \n\
+// More Lines.";
+// let b = `More Lines
+// More Lines
+// More lines`;
+
+// let name = "Aki";
+
+// let message = `${name} was here today`;
+// function updateMessage(p){
+//     let message = `${p} was here today`
+//     console.log(message);
+//     return message;
+// }
+
+// console.log(updateMessage("Bob"));
+
+// for (let i= 0; i < 10; i++){
+//     let message = `${i} count now`
+//     console.log(message);
+// }
+
+// function outputMessage(message = "No Value", b = show(message, "blank", "new")){
+//     output.innerHTML = message;
+// }
+
+// function show(){
+//     console.log(arguments[0]);
+// }
+
+// function myFun(a, b, c, d, e){
+//     if(arguments.length == arguments.callee.length){
+//         console.log("okay");
+//     } else {
+//         console.log("Missing " + (arguments.callee.length - arguments.length));
+//     }
+//     console.log(arguments);
+//     console.log(arguments.length);
+//     console.log(arguments.callee.length);
+// }
+
+// myFun(1, 2, 3, 4, 8);
+
+// const output = document.getElementById('output');
+
+// function myFun(a, b, ...c){
+//     for(let i = 0; i < c.length; i++){
+//         console.log(c[i]);
+//     }
+//     console.log(c);
+//     console.log(c.length);
+// }
+// myFun(1, 2, 3, 4, 8);
+
+// let testSet = Object.create(null);
+// testSet.id = 1;
+// testSet[10] = "Hello World";
+// if(testSet.id){
+//     console.log("its there")
+// } else {
+//     console.log("not there")
+// }
+
+// let testSet2 = new Set();
+// testSet2.add("Hello, world");
+// testSet2.add("Hello, world 1");
+// testSet2.add("Hello, world");
+// testSet2.add("Hello, world 3");
+// testSet2.delete("Hello, world");
+// console.log(testSet2)
+
+// testSet2.forEach(function(value, key){
+//     console.log(key + " " + value);
+// })
+
+// let myArr = [1, 4, 6, 3, 6, 3, 6, 644, 23, 32, 2, 3, 4, 5, 6, 7, 87, 43, 33, 4, 3, 2, 1];
+
+// console.log(myArr);
+
+// function removeDup(a){
+//     return [new Set(a)];
+// }
+// console.log(testSet2);
+// console.log(removeDup(myArr));
+
+// let mapArray = myArr.map(function(a){
+//     return a *=10;
+// })
+
+// console.log(mapArray);
+
+// let myMap = new Map();
+// myMap.set("Hello", "World");
+// myMap.set("myName", "Laurence");
+// myMap.set("Hello", "World");
+// myMap.set("myName", "Laurence");
+// // myMap.delete("Hello")
+// console.log(myMap.size);
+// console.log(myMap.get("Hello"))
+// console.log(myMap)
+
+// let items = [{
+//     name: 'iPhone'
+//     , details: 'White'
+//     , cost: 50000
+// }, {
+//     name: 'iPad'
+//     , details: 'White'
+//     , cost: 80000
+// }, {
+//     name: 'Cable'
+//     , details: '3 foot'
+//     , cost: 1000
+// }, {
+//     name: 'Camera'
+//     , details: '25MP'
+//     , cost: 30000
+// }, {
+//     name: 'Laptop'
+//     , details: 'Intel i7'
+//     , cost: 120000
+// }, {
+//     name: 'LCD Monitor'
+//     , details: '24 inch'
+//     , cost: 20000
+// }, {
+//     name: 'TV'
+//     , details: '50 inch'
+//     , cost: 45000
+// }];
+// console.log(items);
+
+// let holderNames = items.map(function(items){
+//     return items.name;
+// })
+// console.log(holderNames);
+
+// let holderCosts = items.map(items => items.cost)
+// console.log(holderCosts);
+
+// let myArr = [2, 5, 7, 51, 55]
+
+// let a = myArr.find(x =>x > 50)
+
+// console.log(a);
+
+// let c = myArr.findIndex(x => x > 50);
+// console.log(c);
+
+// function makeArray(){
+//     console.log(arguments);
+//     return Array.from(arguments);
+// }
+
+// let d = makeArray("test1", "test2", "test3");
+// console.log(d);
+// console.log(d.findIndex(a => a == "test2"));
+
+// let test = d.entries();
+// console.log(test);
+
+// console.log(test.next().value);
+// console.log(test.next().value);
+// console.log(test.next().value);
+
+// let test1 = [...test];
+// console.log(test1)
+
+// let mySet = new Set(["test", "test2", "test3", "Javascript", "JS6", "hello", "world"])
+// console.log(mySet);
+// let myArr2 = Array.from(mySet);
+// console.log(myArr2.copyWithin(4, 1));
+
+// class MakeName{
+//     constructor(first, last){
+//         this.first = first;
+//         this.last = last;
+//     }
+//     completeName(){
+//         console.log(this);
+//         console.log(this.first + " " + this.last);
+//     }
+// }
+
+// let friend = new MakeName('Aki', "Nakamura");
+// friend.completeName();
+
+
+// function getData(url){
+//     return new Promise(function(response){
+//     let xhr = new XMLHttpRequest();
+//     xhr.open('GET', url);
+//     xhr.onload = function(){
+//         if(xhr.status == 200){
+//             response(xhr.response)
+//         }
+//     }
+//     xhr.send();
+//     })
+// }
+
+// getData("https://api.myjson.com/bins/snnh5").then(function(response){
+//     console.log(response)
+// })
+
+// document.forms.myForm.onchange = outputCal;
+
+// function outputCal(){
+//     function docld(){
+//     let r = document.querySelector(arguments[0]);
+//     r = (r.value == 'on') ? r.checked : Number(r.value);
+//         return r;
+//     }
+//     let age = docld("#age");
+//     let height = (docld('#heightFeet') * 12) + docld("#heightInches");
+//     let weight = docld('#weight');
+//     let lifeStyle = (docld('#lifeStyle') * 0.2) + 1;
+//     let result = docld('#m') ? lifeStyle * (66 + (6.2 * weight) + (12.7 * height)-(6.76 * age)) : lifeStyle * (655.1 + (4.35 * weight + 4.7 * height)-(4.7 * age));
+//     document.getElementById('output').innerHTML = Math.round(result) + " calories needed per day."
+//     console.log(age);
+// }
+
+// const container = document.querySelector(".container");
+// const startGame = document.querySelector(".startGame");
+// const scoreArea = document.querySelector(".score");
+// let player = {
+//     score: 0
+// }
+
+// startGame.addEventListener("click", function(){
+//     startGame.computedStyleMap.display = "none";
+//     let ranTime = Math.random()*2000+ 1000;
+//     setTimeout(makeItem, ranTime);
+// })
+
+// function makeItem(){
+//     let boundary = container.getBoundingClientRect();
+//     console.log(boundary);
+//     let div = document.createElement("div");
+//     div.style.position = "absolute";
+//     div.style.left = Math.random() * boundary.width + "px";
+//     div.style.top = Math.random() * boundary.height + "px";
+//     div.style.width = Math.random() * 10 + 40 + "px";
+//     div.style.height = Math.random() * 10 + 40 + "px";
+//     div.style.cursor = "pointer";
+//     div.style.borderRadius = "10%";
+//     div.style.backgroundColor = "#" + Math.random().toString(16).substr(-6);
+//     div.style.border = "1 px solid black";
+//     div.startTime = Date.now();
+//     div.addEventListener("click", function(){
+//         let endTime = Date.now();
+//         let diff = (endTime - div.startTime) /1000;
+//         scoreArea.innerHTML = "Clicked in " + diff + "seconds";
+//         // startGame.style.display = "block";
+//         clearTimeout(div.timer);
+//         container.removeChild(div)
+//         makeItem();
+//     })
+//         div.timer = setTimeout(function(){
+//             container.removeChild(div);
+//             makeItem();
+//         }, 1000);
+//     container.appendChild(div);
+//     console.log(div);
+
+// }
+
+// const btn = document.createElement('button');
+// btn.innerHTML = "click me";
+// document.body.prepend(btn);
+// const btn1 = document.createElement('button');
+// btn1.innerHTML = "download CSV";
+// btn1.style.backgroundColor = "green";
+// btn1.style.color = "white";
+// btn1.style.padding = "10px"; 
+// document.body.prepend(btn1);
+// const arr1 = [1, 2, 3, 4];
+// const arr2 = [[1, 2, 3], ['a', 'b', 'c'],['d', 'e', 'f'], ['g', 'h', 'i']];
+
+// btn1.addEventListener('click', createCSV);
+
+// function clean(){
+//     let rep = "";
+//     rep.forEach((cell, index) => {
+//         cell = cell == null ? "" : cell.toString();
+//         if(cell.search(/("|,|\n)/g) >= 0){
+//         cell = '"' +   cell + '"'; 
+//         }
+//         if (index > 0){
+//             rep+= ",";
+//         }
+//          rep += cell;
+//     })
+//     return rep;
+// }
+
+// function createCSV(data){
+//     let file;
+//     let holder = "";
+//     let filename = "test.csv";
+//     let properties = {
+//         type: "text/csv;charset=utf-8;"
+//     };
+//     arr2.fortEach((item) => {
+//         holder += clean(item) + "\n";
+//     })
+//     file = new File([holder], filename, properties);
+//     let link = document.createElement('a');
+//     let url = window.URL.createObjectURL(file);
+//     link.setAttribute('href', url);
+//     link.setAttribute('download', filename);
+//     link.style.visibility = "hidden";
+//     document.body.appendChild(link);
+//     link.click();
+//     document.body.removeChild(link);
+// }
+
+// btn.addEventListener('click', () => [
+//     arr2.forEach((first)=> {
+//         console.log(first)
+//         first.forEach((sec)=> {
+//             console.log(sec);
+//         })
+//     })
+// ])
+
+// let myArr = [2, 45, 67, 98, 33, 123, 66];
+
+// let val1 = myArr.find((x)=> {
+//     return x > 50
+// })
+
+// console.log(val1)
+
+// let val2 = myArr.map(x => {
+//     if(x > 50) {
+//         return x;
+//     } else {
+//         return 0;
+//     }
+// })
+
+// console.log(val2);
+
+// let val3 = myArr.filter(x => x > 50);
+// console.log(val3);
+
+// let val4 = myArr.find(x => x > 50);
+// console.log(val4);
+
+// let val5 = myArr.findIndex(x => x > 50);
+// console.log(val5);
+
+// console.log(myArr[val5])
+
+// let val6 = makeArray('test1', 'test2', 'test3');
+// console.log(val6)
+// function makeArray(){
+//     console.log(arguments);
+//     return Array.from(arguments)
+// }
+
+// function output(callback, val){
+//     callback(val)
+// }
+
+// function one(val){
+//     console.log(`First ${val}`)
+// }
+// function two(val){
+//     console.log(`Second ${val}`)
+// }
+// function three(val){
+//     console.log(`Third ${val}`)
+// }
+
+// output(one, 'Dorchester');
+// output(two, 'Newton');
+// output(three, "Boston");
+
+// const arr = [1, 2, 3, 4, 5];
+// const str = "Dorchester";
+// const obj = {first: "Aki", last: "Nakamura"};
+
+// for(let val in obj){
+//     console.log(val)
+// }
+// for(const val of arr){
+//     console.log(val);
+// }
+// for(const letter of str){
+//     console.log(letter);
+// }
+
+// ((...arguments)=>{
+//     for(const val of arguments){
+//         console.log(val);
+//     }
+// })(2, 8, 7)
+
+// const btn = document.querySelector('button');
+// const output = document.querySelector('.output');
+// output.style.color= "black";
+
+// btn.addEventListener('click', ()=> {
+//     let counter = 10;
+//     const countdown = setInterval(()=> {
+//         counter--;
+//         output.innerText = counter;
+//         output.style.color= "red";
+//         if(counter < 0){
+//             output.style.color= "black";
+//             output.innerText = "Blast Off!";
+//             clearInterval(countdown);
+//         }
+//     }, 1000)
+// })
+
+// const nums = document.querySelector('#nums');
+// const btn = document.querySelector('#btn');
+
+// btn.onclick = () => {
+//     const inputValue = nums.value;
+//     const patt = /^[0-3]*$/g;
+//     const results = inputValue.match(patt);
+//     console.log(results);
+//     const valNum = results != null;
+//     console.log(valNum);
+// }
+
+// const output = document.querySelector('.output');
+// const images = ['images/1.jpg', 'images/2.jpg', 'images/3.jpg', 'images/4.jpg'];
+// for(let x = 0; x < 4; x++){
+//  const el = document.createElement('div');
+//  output.append(el);
+//  cGallery(el);
+// }
+// const eles = document.querySelectorAll('.gal');
+// eles.forEach(el => {
+//     cGallery(el);
+// })
+
+// function cGallery(parentEl){
+//     let curIndex = 0;
+//     const gallery = document.createElement('div');
+//     const curImage = document.createElement('img');
+//     curImage.setAttribute('src', 'images/comp.jpg');
+//     const btn1 = document.createElement('button');
+//     btn1.textContent = "Prev";
+//     const btn2 = document.createElement('button');
+//     btn2.textContent = "Next"
+//     parentEl.append(gallery);
+//     gallery.append(curImage);
+//     gallery.append(btn1);
+//     gallery.append(btn2);
+
+//     btn1.addEventListener('click', () => {
+//         curIndex--;
+//         if(curIndex < 0){
+//             curIndex = images.length - 1;
+//         }
+//         console.log(images[curIndex]);
+//         curImage.src= images[curIndex];
+//     })
+//     btn2.addEventListener('click', () => {
+//         curIndex++;
+//         if(curIndex >= images.length){
+//             curIndex = 0;
+//         }
+//         console.log(images[curIndex]);
+//         curImage.src= images[curIndex];
+//     })
+// }
+
+// function myCount(){
+//     let count = 0;
+//     return function(){
+//         return count++;
+//     }
+// }
+
+// function myCount2(){
+//     let count = 0;
+//     return count++;
+// }
+
+// let cnt = myCount();
+// let cnt2 = myCount2;
+
+// for(let x=0; x < 10; x++){
+//     console.log(cnt());
+//     console.log(cnt2());
+// }
+// const output = document.querySelector('.output');
+// function adder(val){
+//     return function(val2){
+//        return  val + val2;
+//     }
+// }
+
+// let a1 = adder(10);
+// console.log(a1(2))
+
+// for(let x=0; x< 10; x++){
+//     output.innerHTML += `<div>Output ${(a1(2 + x))}`
+// }
+
+// const val1 = 10;
+// outerFun(x);
+
+// function outerFun(x){
+//     const val2 = 10;
+//     function innerFun(){
+//         return x + val2 + val1;
+//     }
+//     return innerFun;
+// }
+
+// const val3 = outerFun(15);
+// console.log(val3())
+
+// for(let x = 0; x < 10; x++){
+//     console.log(outerFun(x +2)())
+// }
+
+// let a, b, c;
+// const arr = [5, 10, 15, 20, 30];
+// [a, b, c, ...arr1] = arr;
+// console.log(arr1);
+
+// let f, g, myObj;
+// ({f, g, ...myObj} = {f:100, g:200, h:300, i:400, j:500});
+// console.log(f, g);
+// console.log(myObj)
+
+// function fun(){
+//     return [10, 20, 30, 40, 50]
+// }
+
+// let h, i, j;
+// [h,, i,,j] = fun();
+// console.log(h, i, j);
+// const output = document.querySelector('.output');
+// const jsonFile = 'datajson.json';
+// window.addEventListener("DOMContentLoaded", getData);
+
+// function getData(){
+//     fetch(jsonFile)
+//     .then(rep => rep.json())
+//     .then(data => {
+//         outputGen(data)
+//     })
+// }
+// console.log(people)
+
+// function outputGen(people){
+// people.forEach((person)=> {
+//     const {first, last, fav, id } = person;
+//     const div = document.createElement('div');
+//     div.innerHTML += `<div>First: ${first} Last: ${last} ID (${id}) Favorite thing to do ${fav}`
+//     output.append(div)
+// })
+// }
+
+// const arr = ["Aki", "Nakamura", 1000, 20, 300, true, 3223];
+// const arr1 = arr.map(String);
+// console.log(arr1)
+// const myInput = document.querySelector('input');
+// const btn = document.querySelector('button');
+// const output = document.querySelector('.output')
+
+
+// btn.addEventListener('click', (e)=> {
+//     const val = myInput.value;
+//     const result = arr1.includes(val);
+//     output.textContent = result;
+//     console.log(result)
+// })
+// let val = arr.includes("Aki");
+// console.log(val)
+
+// const arr = ["banana", "apple", "orange", "pear", "cherry"];
+// const box2 = document.querySelector('.box2');
+
+// box2.addEventListener('click', makeArray);
+
+// function makeArray(){
+//     arr.sort(()=> 0.5 - Math.random());
+//     // arr.sort()
+//     outputArray(arr);
+// }
+
+// function outputArray(a){
+//     a.forEach((ele, index) => {
+//         console.log(ele);
+//         const div = document.createElement('div');
+//         div.textContent = `${index} ${ele}`;
+//         box2.append(div)
+//     })
+// }
+// console.log(arr)
+// const myArr = ["Aki", "Bob", "John"]
+// const output = document.querySelector('.output');
+// const btn = document.createElement('button');
+// btn.textContent = "Add Person";
+// output.append(btn);
+
+// const myInput = document.createElement('input');
+// myInput.setAttribute('type', 'text')
+// output.prepend(myInput);
+
+// const ul = document.createElement('ul');
+// output.append(ul);
+// build();
+
+// btn.addEventListener('click', addPerson);
+
+// function addPerson(){
+//     const newPerson = myInput.value;
+//     myArr.push(newPerson);
+//     // output.append(myArr);
+//     // output.innerHTML = "output"
+//     adder(newPerson)
+//     console.log(myArr)
+// }
+
+// function adder(person){
+//     const li = document.createElement('li');
+//     li.textContent = person;
+//     ul.append(li);
+// }
+
+// function build(){
+//     myArr.forEach(ele => {
+//       adder(ele);
+//     })
+// }
+
+const myArr = [
+    {name: 'Laurence',
+    score: 0, 
+    id: 1 },
+    {name: 'Susan"',
+    score: 0, 
+    id: 2 },
+    {name: 'Lisa',
+    score: 0, 
+    id: 3 }
+]
+const output = document.querySelector('.output');
+const btn = document.querySelector('#addNew');
+const addFriend = document.querySelector('#addFriend');
+const tblOutput = document.createElement('table');
+output.append(tblOutput);
+addFriend.value = "Dorchester";
+build();
+
+btn.addEventListener('click', ()=> {
+    const myObj = {name: addFriend.value, score: 0, id: myArr.length+1}
+    myArr.push(myObj);
+    console.log(myArr);
+    build()
+})
 
 function build(){
-    let html = "<h1>Hit the computer</h1>";
-    for(let x = 0; x < offices; x++){
-        html+='<div class="office"><div class="desk"></div><div class="computer"></div></div>';
-    }
-document.querySelector(".gameboard").innerHTML = html;
-computer = document.querySelectorAll('.computer');
-for(let x=0; x<computer.length; x++){
-    computer[x].addEventListener('click', hitcomputer, false)
-}
-}
+    tblOutput.innerHTML = "";
+    myArr.forEach((ele, idx) => {
+        const tr = document.createElement("tr");
+        tblOutput.append(tr);
 
-function popup(){
-    cOff= true;
-    sCom = computer[Math.floor(Math.random()*computer.length)];
-    console.log(sCom)
-    sCom.classList.add('popup');
-    let rTime = (Math.floor(Math.random()*10)*100)+500;
-    timer = setTimeout(hidecomputer, rTime);
-}
-function hidecomputer(){
-    sCom.classList.remove('popup');
-    popup();
-}
+        const td1 = document.createElement("td");
+        td1.textContent = ele.id;
+        tr.append(td1);
+        const td2 = document.createElement("td");
+        td2.textContent = ele.name;
+        tr.append(td2);
+        const td3 = document.createElement("td");
+        td3.textContent = ele.score;
+        tr.append(td3);
+        tr.addEventListener('click',()=> {
+            ele.score++;
+            td3.textContent = ele.score;
+        })
+    })
 
-function hitcomputer(){
-    event.target.classList.remove('popup');
-    if(cOff){
-        cOff = false;
-        score++;
-        document.querySelector('.score').innerHTML = score;
-    }
-    popup();
-}
-
-function start(){
-    popup()
 }

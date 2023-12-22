@@ -1,0 +1,12 @@
+[{
+    "first": "Aki", 
+    "last": "Nakamura",
+    "fav": "baseball", 
+    "id": 100
+},{
+    "first": "Linda", 
+    "last": "Suzuki", 
+    "fav": "Javascript", 
+    "id": 101
+}
+]

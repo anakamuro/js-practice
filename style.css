@@ -51,11 +51,11 @@ div .output {
     font-size: 1.5em;
     color: #fff;
 }
-.box2 {
-    background-color: red;
+/* .box2 {
+    background-color: red; 
     font-size: 0.5em;
     color: #ddd;
-}
+} */
 #one, #two, #three{
    width: 100px;
    height: 100px;
@@ -95,12 +95,12 @@ td:first-child {
 .active {
     background-color: red;
 }
-#output {
+/* #output {
     width: 400px;
     height: 400px;
     display: block;
     border: 1px solid black;
-}
+} */
 #cButton > div {
     width: 100px;
     display: inline-block;
@@ -149,4 +149,124 @@ td:first-child {
 }
 .popup {
     top: 0;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    display: inline-block;
+}
+.btn {
+    background-color: red;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1em;
+    padding: 15px;
+    color: white;
+}
+.btn:hover {
+    background-color: crimson;
+}
+.gameTile {
+    display: inline-block;
+   padding: 3px;
+}
+.flipImage {
+    max-width: 150px;
+    background-color: red;
+    height: 150px;
+}
+#gamebaord {
+   width: 1000px;
+   height: 600px;
+   background-color: red;
+}
+div.gameTile {
+    max-width: 150px;
+    background-color: red;
+    height: 150px;
+}
+img {
+    max-width: 150px;
+    background-color: red;
+    height: 150px;
+}
+#map {
+    height: 100%;
+}
+.item {
+    border: 1px solid black;
+    padding: 2%;
+    width: 29%;
+    float: left;
+    height: 300px;
+}
+.img-fluid {
+    max-width: 100%;
+}
+.productItem, .btn {
+    border: 1px solid black;
+    text-decoration: none;
+    background-color: green;
+    color: azure;
+    border-radius: 10px;
+    padding: 5px;
+    display: inline-block;
+    font-size: 0.6rem;
+}
+.remove {
+    background-color: red;
+}
+td {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+th {
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 1.3em;
+}
+#canvas1 {
+    border: 1px solid black;
+}
+.btn {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 1.6em;
+    display: inline-block;
+    background-color: red;
+    border-radius: 15px;
+    color: white;
+    margin: auto;
+    cursor: pointer;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+}
+.score {
+    font-size: 2em;
+    padding: 5px;
+    width: 40%;
+    margin: auto;
+}
+.output img .gal img {
+    max-width: 200px;
+    display: block;
+}
+table {
+    width: 100%;
+}
+td:first-child{
+    width: 10%;
+}
+td:last-child {
+    width: 10%;
+}
+td {
+    border: 1px solid #ddd;
 }
